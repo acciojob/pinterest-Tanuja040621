@@ -1,10 +1,94 @@
-<div class="hero">
-  <div class="hero-image">
-    <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb" alt="Mountain and Lake">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Pinterest-style Hero Section</title>
+  <style>
+    /* Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    /* Main container */
+    .hero {
+      display: flex;
+      justify-content: space-between;
+      align-items: stretch;
+      height: 100vh;
+      font-family: Arial, sans-serif;
+    }
+
+    /* Image section */
+    .hero-image {
+      flex: 1;
+    }
+
+    .hero-image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    /* Text section */
+    .hero-text {
+      flex: 1;
+      background-color: white;
+      padding: 60px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .hero-text h1 {
+      font-size: 2.5rem;
+      margin-bottom: 20px;
+      line-height: 1.2;
+    }
+
+    .hero-text p {
+      font-size: 1.2rem;
+      margin-bottom: 30px;
+    }
+
+    /* Explore button */
+    .hero-button {
+      padding: 12px 24px;
+      background-color: #e60023;
+      color: white;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    /* Responsive (optional) */
+    @media (max-width: 768px) {
+      .hero {
+        flex-direction: column;
+      }
+
+      .hero-image,
+      .hero-text {
+        flex: none;
+        height: 50vh;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="hero">
+    <div class="hero-image">
+      <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb" alt="Mountain and Lake">
+    </div>
+    <div class="hero-text">
+      <h1>Welcome to my <br><strong>Pinterest clone</strong></h1>
+      <p>Discover new inspiration and save your favorite ideas</p>
+      <a href="#" class="hero-button">Explore now</a>
+    </div>
   </div>
-  <div class="hero-text">
-    <h1>Welcome to my <br><strong>Pinterest clone</strong></h1>
-    <p>Discover new inspiration and save your favorite ideas</p>
-    <a href="#" class="hero-button">Explore now</a>
-  </div>
-</div>
+
+</body>
+</html>
